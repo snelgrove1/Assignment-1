@@ -12,4 +12,6 @@ cal 2000: Shows the calender for the year 2000
 
 cal 9 1752: Shows the calender for September 1752. But the days September 3rd-13th are not shown
 
+bc -l: the bc command is a calculator on ubuntu. It is a precision calculator. -l difined the calculator to a standard math library.
 
+echo 5+4 | bc -l: This command takes the output 5+4 and inputs it through a pipe into the calculator giving an exact answer of 9 as the output.

@@ -1,0 +1,101 @@
+ls
+cd Downloads
+cd Documents/learning_shell/nelle/creatures
+cp *.dat original-*.dat
+
+#Sytax for a loop
+#for (variable) (in some set)
+#  do
+#  ----
+#   -----
+#    ------
+#  done
+
+for filename in basilisk.dat unicorn.dat
+>do
+>head -3 $filename
+>done
+
+for x in basilisk.dat unicorn.dat
+>do
+>head -3 $x
+>done
+
+for filename in basilisk.dat unicorn.dat
+>do
+>echo cp $filename original-$filename
+>done
+
+#push the up arrow to get a large in put and remove "do cp"
+#push enter and you will copy the two files
+
+
+#Task is to make a copy of the two creatures from creature directory
+#and put it into the home directory (learning)
+#push up arrow to get the  large text, add:
+     ~/Documents/learning_shell
+# to the from of the second part
+
+cd
+cd Downloads/learning/nelle/creatures
+do for $filename in basilisk.dat unicorn.dat
+>do
+>head -100 $filename | tail -20
+>done
+#push the up arrow and enter
+#push the up arrow and add $filename infront of the | to get an out put 
+#with unicron in it. This is where the unicron tail part shows
+clear
+
+cd..
+cd north-pacific-gyre/2012-07-03/
+ls
+#there should be 21 outputs
+rm test01.txt
+gedit NENE020188.txt
+#shows the text in one of the files. CLose it
+
+# This task is to organize them in a way that on the files ending with A 
+# and B are organized, not the ones that end with a Z
+
+for filename in *[AB].txt
+>do
+>echo $filename
+>done
+#There should be a list of files, that end with A or B, not Z
+for filename in *[AB].txt ; do echo  cp $filename stat-$filename ; done
+#push the up arrow
+#erase the echo and leave it as do cp and push enter
+ls
+for filename in stat-*txt
+>do
+>bash goostats $filename
+>done
+#should very slowly goo stats the files.Pushing CTRL+C will cancel the loop
+#push the up arrow and push enter. 
+clear
+
+expr 3+5
+#expr is an easy calculator
+for left in 2 3 
+>do
+>for right in 2 3
+>do
+>expr $left + $right
+>done
+>done
+#it is going to take the left variables and add them with the right variables
+#it will be 2+2, 2+3, 3+2, 3+3
+clear
+
+cd ../..
+cd molecules/
+ls
+gedit middle.sh
+#inside the text editor
+head -15 octane .pdb | tail -5
+bash middle.sh
+gedit middle.sh
+head "$2" "$1" | tail "$3"
+cat middle.sh
+bash middle.sh methane.pdb -20 -5
