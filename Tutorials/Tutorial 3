@@ -1,0 +1,102 @@
+#data should be in this folder with 15 files in it.
+#do this inside tutorial 3 folder
+
+ipython notebook
+#should open up a web browser the rest of this occurs in the web browser
+
+import numpy
+#imports an array of commands like for matricies
+
+SHIFT+ ENTER
+# must do this to execute a command.
+
+numpy.loadtxt(fname = './data/inflamation-01.csv',delimiter=',')
+SHIFT+ENTER
+#should show an array of information. 
+
+data_1 = numpy.loadtxt(fname='./data/inflamation-01.csv',delimiter=',')
+SHIFT+ENTER
+#the array has been saved now as variable data_1
+
+print(data_1)
+#SHould show the array again
+
+data.shape
+SHIFT+ENTER
+#SHould show the dimensions of the array
+
+print(data_1[1,1])
+SHIFT+ENTER
+#will not show the first entry because python counts from 0, so it gives us a value of 1
+print(data_1[0,0])
+SHIFT+ENTER
+#THis is the real first entry of the array.
+
+#NOTE: Since python starts at 0, a 60x40 matrix would be values 0-59 and 0-39.
+
+subdata = data_1[0:3,36:]
+SHIFT+ENTER
+print(subdata)
+print(subdata,shape)
+SHIFT+ENTER
+#SHould show a 3x4 matrix. Subdata out new variable which shows the values of
+#rows 0-2 and coloum 36-38. The coloum on the right side DOES NOT show up on the array.
+print(data_1[0:3,36:39])
+SHIFT+ENTER
+#The new array will not have the 39th coloum included in it.
+
+#NOTE indexing should be done in square  brakets [] to represent a designated array.
+
+print(data_1[0,-1])
+SHIFT+ENTER
+#SHows the first row and the LAST coloumn
+print(data_1[0,-3])
+SHIFT+ENTER
+#prints the thrid last entry in row 1
+
+print('maximum value of the data is : ', data_1.max())
+print('minimum value of the data is :', data_1.min())
+print('standard deviation of the data is : ', data.std())
+SHIFT+ENTER
+#SHould display three pieces of information. .max and .min and .std are all functions
+
+#NOTE must use () after a function such as .min
+
+patient_0 = data_1[0,:]
+SHIFT+ENTER
+#THis will make a variable that holds all the values of only Row 1
+
+print('The maximum inflamation is : ', patient_0.max())
+print('The mean for this patient is : ', patient_0.mean())
+SHIFT+ENTER
+#SHows the max and mean for patient 0 which is all the information in row 1 only
+
+print(data_1.mean(axis=0))
+print(data_1.mean(axis=0).shape)
+SHIFT+ENTER
+#The first command takes the mean from all rows and displays them
+#The second command displays the shape on the array
+
+print(data_1.mean(axis=1))
+print(data_1.mean(axis=1).shape)
+SHIFT+ENTER
+#THis time it will show the mean for the COULOUMS and it's size.
+
+#NOTE for a mean, axis=0 is the rows only and axis=1 is the coloums only
+
+import matplot.lib.pyplot
+#This will import the plotting library.
+SHIFT+ENTER
+
+image = matplotlib.pyplot.imshow(data)
+matplotlib.pyplot.show(image)
+SHIFT+ENTER
+#Plots the data
+
+#NOTE the line number will be * while the plot is open. THis is because the plot is still
+#working and the windowed plot must be closed to continue.
+
+#THIS COMMAND IS ONLY FOR NOTEBOOK
+#THIS COMMAND GOES ON LINE ONE BELOW THE IMPORT NUMBY
+%matplotlin inline
+#THis will make the plot show up on the command interface not as a window.

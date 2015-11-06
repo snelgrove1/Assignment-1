@@ -1,0 +1,53 @@
+#create a folder in Documents, initialize git. nano files that do things 
+#like the diff command and .gitignor
+
+cd DOcuments
+mkdir git_test
+cd git_test
+git initls -a
+# should show the repository .git
+nano tutorial_1
+This is the first sentence.
+CTR+X    Y   ENTER
+git status
+#this will show what files are new and can be committed/added with steps
+git add tutorial_1.txt
+git status
+#should now be in green.
+git commit tutorial_1.txt -m "start of the project -tutorial_1"
+git status
+#nothign to commit, everything is done
+git log
+#log book of commits
+
+nano tutorial_1.txt
+type anythign. Like anything. Please.
+CTR + X     T    ENTER
+git status
+#should say it is modified
+git diff
+#tells what has changed in the file.chenged text will be green/
+#for changes I should commit and the  add
+git commit tutorial_1 -m "More lines added"
+git log
+#should show the last two commits
+git diff (long code from first log ex. 2273ed7d7ff9ssdf8fs0sf8dg7vbd79v) (long code from second long 2238d0ssfd9fs8s0s0v89av8vs0)
+#when commiting ., doing  -a it will commit all files in the directory
+
+touch a.dat b.dat c.dat
+ls
+#should show 3 new files
+#I want to ignore all the files in the .dat files in version control
+nano .gitignore
+*.dat # or you can do it all indivually a.dat b.dat c.dat)
+CtR+X   Y    ENTER
+cat .gitignore
+git status
+#should show 4 files not committed.
+git add .gitignore
+git status
+#now should have 3 ignored files
+git commit .gitignore -m "files and directories to be ignored"
+git status
+#all three should be ignored.
+
