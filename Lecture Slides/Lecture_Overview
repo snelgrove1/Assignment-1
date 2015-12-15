@@ -1,0 +1,161 @@
+LECTURE 1
+Very basic commands on UNIX, such as pwd, ls, cd, ., and ..
+-a is print all
+-F is a flag that modifies the commands behavior (adds a / behind files)
+
+
+
+LECTURE 2 (Good for creating sorted direcotires)
+Mo0re basic commands such as:
+mkdir, nano, rm, rmdir (must be empty), mv, cp, *, wc (wordcount), >, cat, sort
+-s      shows the size
+-h      for human friedly output (number of bytes)
+*       wild card matches zeor or more characters (*.pdg matches all files with .pdb)
+           ---> for word count can also use -l for lines, -w for words or -c for characters
+>       with word count will create a file that stores the value for a wc
+cat     will  conCATenate files
+head -1 will get the first line of a file 
+|       is a pipe, will take one thng and have it produce dsoemthing else
+
+
+
+LECTURE 3 (Midterm important?)
+chmod, ;, man, find, ' ',
+grep    find and prints lines ina  file that match  a pattern
+not     every letter matches itself?? lots of grep combinations.
+
+
+
+LECTURE 4 (Looping)
+echo, >> (apending), 1> (stdout), 2> (stderr), &>, zip
+$      replaces variable name with value before program runs
+=      use this to create a new variable
+
+
+
+LECTURE 5 ignore....
+
+
+
+LECTURE 6
+Sarts with the quiz
+Version COnrol and Git (No codeing)
+Rest of the lecture is useless/
+
+
+
+LECTURE 7 (HOW TO USE GIT)
+Not important for Midterm
+
+
+
+LECTURE 8 (More git stuff)
+
+
+
+LECTURE 9 (Python Basics)
+THings to put in Python first line  (NumPy, SciPy Library, Matplotlib, IPython)
+You can start with ipython
+print(additon), nano simple.py, = (variables)
+
+
+
+LECTURE 10 (Loops and While, lists)
+Basic Arithmatic (+, -, *, /, **, %)
++=,%=, ==, <, !=, >=
+while, print, if, elif, else, del .append, .insert, range
+
+
+
+LECTURE 11(important)
+how to read and open text files in python\
+strings
+
+
+
+LECTURE 12
+alias - assigning one variable to another variable
+append - revalue a variable by recalling it.
+FUNCTIONS
+def - defining a variable
+if, elif else
+If a funcition doesn't returna value, it returns None
+Appender
+
+
+
+LECTURE 13 Midterm Writtten Portion only
+
+
+
+Lecture 14
+Assigning values to other variables in a funtion
+Higher order functions 
+using * in functions
+SLide 61 for flitering, mapping and reducing functions
+SLide 70+ is libraries
+Commands for importing Useful tools in python
+import filename
+help(filename)
+from filename import stuff as thing
+from math import *
+read lines in a file
+logical indexing
+
+
+
+LECTURE 15 Arrrrrayyysss
+Indexing in terms like [1:3]
+Numpy (n-dimensional array, linear algebra, fourier transform, random number capabilities
+Numpy arrays
+
+
+
+LECTURE 16 Arrays again.
+things to add to an array
+how to make a largearray like 2x3 or 5x2
+reshape, copy, filling an array, tolist, tostring, fromstring, fill, tanspose, flatten
+concatenate (combine multiple arrays into one)
+
+
+
+LECTURE 17 More Array work
+np.arange
+np.zeros & np.ones (1 or 0 arrays)
+nbp.identity (identity matrix)
+np.floor & np.ceil will round a decimal up or down
+np.rint round to closest value
+Array iteration
+
+
+
+LECTURE 18 Turples 
+This involves using () instead of ()
+How t make functions return multiple values
+enumerate produces (index,value) pairs     Number off a list easily (SLide 53)
+Text...kinda useless
+
+
+
+LECTURE 19 
+datatype sizes. Not too sure abouyt it
+
+
+
+LECTURE 20
+using sets. they are unorganized
+Things you can do with sets: See SLid 38 for full list of options
+-add (add an element)
+-clear (removes all elements)
+-difference(odds)      
+-intersection          
+-issubset              
+-issuperset
+-remove 
+Slide 46+ is about opening and reading files
+
+
+
+LECTURE 21
+sets and dictionaries
+
